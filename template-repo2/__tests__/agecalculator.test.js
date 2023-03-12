@@ -31,5 +31,10 @@ describe('AgeCalculator', () => {
     expect(ageCalculator.yearsSince(20, 'venus')).toBeCloseTo(6.45, 2);
   });
 
+  it('calculates years since a past birthday on mars correctly', () => {
+    const ageCalculator = new AgeCalculator(24);
+    expect(ageCalculator.yearsSince(20, 'mars')).toBeCloseTo(2.26, 2);
+  });
+
 
 });
