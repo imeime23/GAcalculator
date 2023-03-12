@@ -1,7 +1,7 @@
 {
-  "name": "shape-tracker",
+  "name": "age-calculator",
   "version": "1.0.0",
-  "description": "",
+  "description": "* _HTML_\r * _GitHub_\r * _VS Code_\r * _JavaScript_",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode=development",
