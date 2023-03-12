@@ -23,4 +23,22 @@ export default class AgeCalculator {
     return this.age / 11.86;
   }
 
+  // Calculates the number of years that have passed on each planet since a past birthday
+  yearsSince(birthday, planet) {
+    const earthYearsSince = this.age - birthday;
+    switch (planet) {
+      case "mercury":
+        return earthYearsSince / 0.24;
+      case "venus":
+        return earthYearsSince / 0.62;
+      case "mars":
+        return earthYearsSince / 1.88;
+      case "jupiter":
+        return earthYearsSince / 11.86;
+      default:
+        return 0;
+    }
+  }
+
+
 }

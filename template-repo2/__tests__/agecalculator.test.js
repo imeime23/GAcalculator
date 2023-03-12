@@ -21,4 +21,9 @@ describe('AgeCalculator', () => {
     expect(ageCalculator.jupiterAge).toBeCloseTo(2.02, 2);
   });
 
+  it('calculates years since a past birthday on mercury correctly', () => {
+    const ageCalculator = new AgeCalculator(24);
+    expect(ageCalculator.yearsSince(20, 'mercury')).toBeCloseTo(16.67, 2);
+  });
+
 });
