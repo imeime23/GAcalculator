@@ -16,4 +16,9 @@ describe('AgeCalculator', () => {
     expect(ageCalculator.marsAge).toBeCloseTo(12.77, 2);
   });
 
+  it('calculates jupiter age correctly', () => {
+    const ageCalculator = new AgeCalculator(24);
+    expect(ageCalculator.jupiterAge).toBeCloseTo(2.02, 2);
+  });
+
 });
