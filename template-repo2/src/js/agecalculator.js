@@ -39,6 +39,21 @@ export default class AgeCalculator {
         return 0;
     }
   }
-
-
+  
+  // Calculates the number of years that have yet to pass until a future birthday on a planet
+  yearsUntil(birthday, planet) {
+    const earthYearsUntil = birthday - this.age;
+    switch (planet) {
+      case "mercury":
+        return earthYearsUntil / 0.24;
+      case "venus":
+        return earthYearsUntil / 0.62;
+      case "mars":
+        return earthYearsUntil / 1.88;
+      case "jupiter":
+        return earthYearsUntil / 11.86;
+      default:
+        return 0;
+    }
+  }
 }

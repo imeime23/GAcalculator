@@ -41,5 +41,20 @@ describe('AgeCalculator', () => {
     expect(ageCalculator.yearsSince(20, 'jupiter')).toBeCloseTo(0.337, 2);
   });
 
+  it('calculates years until a future birthday on mercury correctly', () => {
+    const ageCalculator = new AgeCalculator(24);
+    expect(ageCalculator.yearsUntil(26, 'mercury')).toBeCloseTo(8.33333333, 2);
+  });
+
+  it('calculates years until a future birthday on venus correctly', () => {
+    const ageCalculator = new AgeCalculator(24);
+    expect(ageCalculator.yearsUntil(26, 'venus')).toBeCloseTo(3.4, 2);
+  });
+
+  it('calculates years until a future birthday on mars correctly', () => {
+    const ageCalculator = new AgeCalculator(24);
+    expect(ageCalculator.yearsUntil(26, 'mars')).toBeCloseTo(4.46, 2);
+  });
+
 
 });
