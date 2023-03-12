@@ -53,8 +53,11 @@ describe('AgeCalculator', () => {
 
   it('calculates years until a future birthday on mars correctly', () => {
     const ageCalculator = new AgeCalculator(24);
-    expect(ageCalculator.yearsUntil(26, 'mars')).toBeCloseTo(4.46, 2);
+    expect(ageCalculator.yearsUntil(26, 'mars')).toBeCloseTo(5.52, 2);
   });
 
-
+  it('calculates years until a future birthday on jupiter correctly', () => {
+    const ageCalculator = new AgeCalculator(24);
+    expect(ageCalculator.yearsUntil(26, 'jupiter')).toBeCloseTo(0.71, 2);
+  });
 });
