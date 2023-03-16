@@ -46,12 +46,6 @@ export default class AgeCalculator {
     switch (planet) {
       case "mercury":
         return earthYearsUntil / 0.24;
-      case "venus":
-        return earthYearsUntil / 0.62;
-      case "mars":
-        return earthYearsUntil / 1.88;
-      case "jupiter":
-        return earthYearsUntil / 11.86;
       default:
         return 0;
     }

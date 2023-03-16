@@ -1,8 +1,8 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import Triangle from './js/triangle.js';
-import Rectangle from './js/rectangle.js';
+import Triangle from './js/triangle.js.js.js';
+import Rectangle from './js/rectangle.js.js.js';
 
 function handleTriangleForm(event) {
   event.preventDefault();

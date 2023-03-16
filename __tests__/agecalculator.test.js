@@ -1,4 +1,4 @@
-import AgeCalculator from '../src/js/agecalculator.js';
+import AgeCalculator from '../src2/js/agecalculator.js';
 
 describe('AgeCalculator', () => {
   it('calculates mercury age correctly', () => {
@@ -47,17 +47,16 @@ describe('AgeCalculator', () => {
   });
 
   it('calculates years until a future birthday on venus correctly', () => {
-    const ageCalculator = new AgeCalculator(24);
-    expect(ageCalculator.yearsUntil(26, 'venus')).toBeCloseTo(3.4, 2);
-  });
+  const ageCalculator = new AgeCalculator(24);
+  expect(ageCalculator.yearsUntil(27, 'venus')).toBeCloseTo(3.40, 2);
 
   it('calculates years until a future birthday on mars correctly', () => {
     const ageCalculator = new AgeCalculator(24);
-    expect(ageCalculator.yearsUntil(26, 'mars')).toBeCloseTo(5.52, 2);
+    expect(ageCalculator.yearsUntil(26.5, 'mars')).toBeCloseTo(5.52, 2);
   });
-
+  
   it('calculates years until a future birthday on jupiter correctly', () => {
     const ageCalculator = new AgeCalculator(24);
-    expect(ageCalculator.yearsUntil(26, 'jupiter')).toBeCloseTo(0.71, 2);
+    expect(ageCalculator.yearsUntil(25, 'jupiter')).toBeCloseTo(0.71, 2);
   });
 });
